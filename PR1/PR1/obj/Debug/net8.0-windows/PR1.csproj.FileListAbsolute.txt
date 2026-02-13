@@ -1,0 +1,16 @@
+D:\Git\InformationProtection\PR1\PR1\bin\Debug\net8.0-windows\PR1.exe
+D:\Git\InformationProtection\PR1\PR1\bin\Debug\net8.0-windows\PR1.deps.json
+D:\Git\InformationProtection\PR1\PR1\bin\Debug\net8.0-windows\PR1.runtimeconfig.json
+D:\Git\InformationProtection\PR1\PR1\bin\Debug\net8.0-windows\PR1.dll
+D:\Git\InformationProtection\PR1\PR1\bin\Debug\net8.0-windows\PR1.pdb
+D:\Git\InformationProtection\PR1\PR1\obj\Debug\net8.0-windows\PR1.Form1.resources
+D:\Git\InformationProtection\PR1\PR1\obj\Debug\net8.0-windows\PR1.csproj.GenerateResource.cache
+D:\Git\InformationProtection\PR1\PR1\obj\Debug\net8.0-windows\PR1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\InformationProtection\PR1\PR1\obj\Debug\net8.0-windows\PR1.AssemblyInfoInputs.cache
+D:\Git\InformationProtection\PR1\PR1\obj\Debug\net8.0-windows\PR1.AssemblyInfo.cs
+D:\Git\InformationProtection\PR1\PR1\obj\Debug\net8.0-windows\PR1.csproj.CoreCompileInputs.cache
+D:\Git\InformationProtection\PR1\PR1\obj\Debug\net8.0-windows\PR1.dll
+D:\Git\InformationProtection\PR1\PR1\obj\Debug\net8.0-windows\refint\PR1.dll
+D:\Git\InformationProtection\PR1\PR1\obj\Debug\net8.0-windows\PR1.pdb
+D:\Git\InformationProtection\PR1\PR1\obj\Debug\net8.0-windows\PR1.genruntimeconfig.cache
+D:\Git\InformationProtection\PR1\PR1\obj\Debug\net8.0-windows\ref\PR1.dll
