@@ -5,11 +5,11 @@ using System.Windows.Forms;
 
 namespace PR1
 {
-    public partial class Form1 : Form
+    public partial class RSA : Form
     {
         BigInteger p, q, n, phi, publicExponent, d;
 
-        public Form1()
+        public RSA()
         {
             InitializeComponent();
         }
