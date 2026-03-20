@@ -32,3 +32,9 @@ C:\Users\Marina\Documents\GitHub\InformationProtection\PR1\PR1\obj\Debug\net8.0-
 C:\Users\Marina\Documents\GitHub\InformationProtection\PR1\PR1\obj\Debug\net8.0-windows\ref\PR1.dll
 D:\Git\InformationProtection\PR1\PR1\obj\Debug\net8.0-windows\PR1.sourcelink.json
 D:\Git\InformationProtection\PR1\PR1\obj\Debug\net8.0-windows\PR1.RSA.resources
+D:\Git\InformationProtection\PR1\PR1\obj\Debug\net8.0-windows\PR1.Menu.resources
+D:\Git\InformationProtection\PR1\PR1\obj\Debug\net8.0-windows\PR1.ABKP.resources
+D:\Git\InformationProtection\PR1\PR1\obj\Debug\net8.0-windows\PR1.MVKR.resources
+D:\Git\InformationProtection\PR1\PR1\obj\Debug\net8.0-windows\PR1.GAKP.resources
+D:\Git\InformationProtection\PR1\PR1\obj\Debug\net8.0-windows\PR1.GMKP.resources
+D:\Git\InformationProtection\PR1\PR1\obj\Debug\net8.0-windows\PR1.Hamming.resources

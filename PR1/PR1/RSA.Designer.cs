@@ -113,7 +113,7 @@
             this.Controls.Add(this.btnGenerate);
             this.Controls.Add(this.btnEncrypt);
             this.Controls.Add(this.btnDecrypt);
-            this.Text = "RSA Demo";
+            this.Text = "RSA";
             this.ResumeLayout(false);
             this.PerformLayout();
         }
