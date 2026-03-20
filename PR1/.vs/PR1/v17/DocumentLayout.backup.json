@@ -3,31 +3,55 @@
   "WorkspaceRootPath": "D:\\Git\\InformationProtection\\PR1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{049B4DA3-F0F9-4A93-9AD4-16176861C611}|PR1\\PR1.csproj|d:\\git\\informationprotection\\pr1\\pr1\\gmkp.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{049B4DA3-F0F9-4A93-9AD4-16176861C611}|PR1\\PR1.csproj|solutionrelative:pr1\\gmkp.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{049B4DA3-F0F9-4A93-9AD4-16176861C611}|PR1\\PR1.csproj|d:\\git\\informationprotection\\pr1\\pr1\\gmkp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{049B4DA3-F0F9-4A93-9AD4-16176861C611}|PR1\\PR1.csproj|solutionrelative:pr1\\gmkp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{049B4DA3-F0F9-4A93-9AD4-16176861C611}|PR1\\PR1.csproj|d:\\git\\informationprotection\\pr1\\pr1\\gmkp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{049B4DA3-F0F9-4A93-9AD4-16176861C611}|PR1\\PR1.csproj|solutionrelative:pr1\\gmkp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{049B4DA3-F0F9-4A93-9AD4-16176861C611}|PR1\\PR1.csproj|d:\\git\\informationprotection\\pr1\\pr1\\gmkp.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{049B4DA3-F0F9-4A93-9AD4-16176861C611}|PR1\\PR1.csproj|solutionrelative:pr1\\gmkp.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{049B4DA3-F0F9-4A93-9AD4-16176861C611}|PR1\\PR1.csproj|d:\\git\\informationprotection\\pr1\\pr1\\hamming.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{049B4DA3-F0F9-4A93-9AD4-16176861C611}|PR1\\PR1.csproj|solutionrelative:pr1\\hamming.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{049B4DA3-F0F9-4A93-9AD4-16176861C611}|PR1\\PR1.csproj|D:\\Git\\InformationProtection\\PR1\\pr1\\gmkp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{049B4DA3-F0F9-4A93-9AD4-16176861C611}|PR1\\PR1.csproj|solutionrelative:pr1\\gmkp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{049B4DA3-F0F9-4A93-9AD4-16176861C611}|PR1\\PR1.csproj|d:\\git\\informationprotection\\pr1\\pr1\\hamming.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{049B4DA3-F0F9-4A93-9AD4-16176861C611}|PR1\\PR1.csproj|solutionrelative:pr1\\hamming.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{049B4DA3-F0F9-4A93-9AD4-16176861C611}|PR1\\PR1.csproj|d:\\git\\informationprotection\\pr1\\pr1\\gakp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{049B4DA3-F0F9-4A93-9AD4-16176861C611}|PR1\\PR1.csproj|solutionrelative:pr1\\gakp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{049B4DA3-F0F9-4A93-9AD4-16176861C611}|PR1\\PR1.csproj|D:\\Git\\InformationProtection\\PR1\\pr1\\gakp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{049B4DA3-F0F9-4A93-9AD4-16176861C611}|PR1\\PR1.csproj|solutionrelative:pr1\\gakp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{049B4DA3-F0F9-4A93-9AD4-16176861C611}|PR1\\PR1.csproj|d:\\git\\informationprotection\\pr1\\pr1\\mbkp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{049B4DA3-F0F9-4A93-9AD4-16176861C611}|PR1\\PR1.csproj|solutionrelative:pr1\\mbkp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{049B4DA3-F0F9-4A93-9AD4-16176861C611}|PR1\\PR1.csproj|D:\\Git\\InformationProtection\\PR1\\pr1\\mbkp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{049B4DA3-F0F9-4A93-9AD4-16176861C611}|PR1\\PR1.csproj|solutionrelative:pr1\\mbkp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{049B4DA3-F0F9-4A93-9AD4-16176861C611}|PR1\\PR1.csproj|d:\\git\\informationprotection\\pr1\\pr1\\abkp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{049B4DA3-F0F9-4A93-9AD4-16176861C611}|PR1\\PR1.csproj|solutionrelative:pr1\\abkp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{049B4DA3-F0F9-4A93-9AD4-16176861C611}|PR1\\PR1.csproj|D:\\Git\\InformationProtection\\PR1\\pr1\\abkp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{049B4DA3-F0F9-4A93-9AD4-16176861C611}|PR1\\PR1.csproj|solutionrelative:pr1\\abkp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{049B4DA3-F0F9-4A93-9AD4-16176861C611}|PR1\\PR1.csproj|d:\\git\\informationprotection\\pr1\\pr1\\hamming.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{049B4DA3-F0F9-4A93-9AD4-16176861C611}|PR1\\PR1.csproj|solutionrelative:pr1\\hamming.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{049B4DA3-F0F9-4A93-9AD4-16176861C611}|PR1\\PR1.csproj|d:\\git\\informationprotection\\pr1\\pr1\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{049B4DA3-F0F9-4A93-9AD4-16176861C611}|PR1\\PR1.csproj|solutionrelative:pr1\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{049B4DA3-F0F9-4A93-9AD4-16176861C611}|PR1\\PR1.csproj|d:\\git\\informationprotection\\pr1\\pr1\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{049B4DA3-F0F9-4A93-9AD4-16176861C611}|PR1\\PR1.csproj|D:\\Git\\InformationProtection\\PR1\\pr1\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{049B4DA3-F0F9-4A93-9AD4-16176861C611}|PR1\\PR1.csproj|solutionrelative:pr1\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -38,8 +62,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MBKP.cs",
+              "DocumentMoniker": "D:\\Git\\InformationProtection\\PR1\\PR1\\MBKP.cs",
+              "RelativeDocumentMoniker": "PR1\\MBKP.cs",
+              "ToolTip": "D:\\Git\\InformationProtection\\PR1\\PR1\\MBKP.cs",
+              "RelativeToolTip": "PR1\\MBKP.cs",
+              "ViewState": "AgIAABoBAAAAAAAAAAAQwEQBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T12:30:06.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MBKP.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\Git\\InformationProtection\\PR1\\PR1\\MBKP.cs",
+              "RelativeDocumentMoniker": "PR1\\MBKP.cs",
+              "ToolTip": "D:\\Git\\InformationProtection\\PR1\\PR1\\MBKP.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "PR1\\MBKP.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T12:30:04.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ABKP.cs",
+              "DocumentMoniker": "D:\\Git\\InformationProtection\\PR1\\PR1\\ABKP.cs",
+              "RelativeDocumentMoniker": "PR1\\ABKP.cs",
+              "ToolTip": "D:\\Git\\InformationProtection\\PR1\\PR1\\ABKP.cs",
+              "RelativeToolTip": "PR1\\ABKP.cs",
+              "ViewState": "AgIAAOkAAAAAAAAAAAAQwBMBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T12:29:44.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ABKP.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\Git\\InformationProtection\\PR1\\PR1\\ABKP.cs",
+              "RelativeDocumentMoniker": "PR1\\ABKP.cs",
+              "ToolTip": "D:\\Git\\InformationProtection\\PR1\\PR1\\ABKP.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "PR1\\ABKP.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T12:29:42.517Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -54,7 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "Hamming.Designer.cs",
               "DocumentMoniker": "D:\\Git\\InformationProtection\\PR1\\PR1\\Hamming.Designer.cs",
               "RelativeDocumentMoniker": "PR1\\Hamming.Designer.cs",
@@ -62,51 +134,73 @@
               "RelativeToolTip": "PR1\\Hamming.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T11:49:52.306Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-20T11:49:52.306Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Hamming.cs",
               "DocumentMoniker": "D:\\Git\\InformationProtection\\PR1\\PR1\\Hamming.cs",
               "RelativeDocumentMoniker": "PR1\\Hamming.cs",
               "ToolTip": "D:\\Git\\InformationProtection\\PR1\\PR1\\Hamming.cs",
               "RelativeToolTip": "PR1\\Hamming.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAOMAAAAAAAAAAAAUwAQBAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T11:45:54.412Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-20T11:45:54.412Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GMKP.Designer.cs",
-              "DocumentMoniker": "D:\\Git\\InformationProtection\\PR1\\PR1\\GMKP.Designer.cs",
-              "RelativeDocumentMoniker": "PR1\\GMKP.Designer.cs",
-              "ToolTip": "D:\\Git\\InformationProtection\\PR1\\PR1\\GMKP.Designer.cs*",
-              "RelativeToolTip": "PR1\\GMKP.Designer.cs*",
-              "ViewState": "AgIAAP4AAAAAAAAAAAAqwCoBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T11:29:54.56Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "GMKP.cs",
               "DocumentMoniker": "D:\\Git\\InformationProtection\\PR1\\PR1\\GMKP.cs",
               "RelativeDocumentMoniker": "PR1\\GMKP.cs",
               "ToolTip": "D:\\Git\\InformationProtection\\PR1\\PR1\\GMKP.cs",
               "RelativeToolTip": "PR1\\GMKP.cs",
-              "ViewState": "AgIAAEMBAAAAAAAAAAAqwFkBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABYBAAAAAAAAAAA5wEIBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-20T11:29:51.832Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GMKP.Designer.cs",
+              "DocumentMoniker": "D:\\Git\\InformationProtection\\PR1\\PR1\\GMKP.Designer.cs",
+              "RelativeDocumentMoniker": "PR1\\GMKP.Designer.cs",
+              "ToolTip": "D:\\Git\\InformationProtection\\PR1\\PR1\\GMKP.Designer.cs",
+              "RelativeToolTip": "PR1\\GMKP.Designer.cs",
+              "ViewState": "AgIAAP4AAAAAAAAAAAAowCoBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T11:29:54.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "GAKP.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\Git\\InformationProtection\\PR1\\PR1\\GAKP.cs",
+              "RelativeDocumentMoniker": "PR1\\GAKP.cs",
+              "ToolTip": "D:\\Git\\InformationProtection\\PR1\\PR1\\GAKP.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "PR1\\GAKP.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T12:30:14.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GAKP.cs",
+              "DocumentMoniker": "D:\\Git\\InformationProtection\\PR1\\PR1\\GAKP.cs",
+              "RelativeDocumentMoniker": "PR1\\GAKP.cs",
+              "ToolTip": "D:\\Git\\InformationProtection\\PR1\\PR1\\GAKP.cs",
+              "RelativeToolTip": "PR1\\GAKP.cs",
+              "ViewState": "AgIAAPkAAAAAAAAAAAAQwCMBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T12:30:16.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Menu.cs",
               "DocumentMoniker": "D:\\Git\\InformationProtection\\PR1\\PR1\\Menu.cs",
               "RelativeDocumentMoniker": "PR1\\Menu.cs",
@@ -119,15 +213,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "Menu.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "D:\\Git\\InformationProtection\\PR1\\PR1\\Menu.cs",
               "RelativeDocumentMoniker": "PR1\\Menu.cs",
               "ToolTip": "D:\\Git\\InformationProtection\\PR1\\PR1\\Menu.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "PR1\\Menu.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T10:31:47.537Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+              "WhenOpened": "2026-03-20T10:31:47.537Z"
             }
           ]
         }

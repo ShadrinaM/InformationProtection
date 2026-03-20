@@ -9,8 +9,8 @@ namespace PR1
     {
         private BigInteger[] A;           // закрытая мультипликативная сверхвозрастающая последовательность
         private BigInteger p;             // модуль
-        private BigInteger t;             // множитель (секретная экспонента)
-        private BigInteger t_inv;         // обратный множитель (обратная экспонента по модулю p)
+        private BigInteger t;             // множитель (секретный)
+        private BigInteger t_inv;         // обратный множитель
         private BigInteger[] W;           // открытый ключ
         private int n;                    // длина последовательности
         private int B;                    // основание системы счисления
@@ -19,49 +19,45 @@ namespace PR1
         {
             InitializeComponent();
             n = 4;
-            B = 10;
+            B = 5;
             numericUpDownN.Value = n;
             numericUpDownB.Value = B;
         }
 
-        // ========== Генерация мультипликативной сверхвозрастающей последовательности для GMKP ==========
+        // ========== Генерация мультипликативной сверхвозрастающей последовательности ==========
         private void btnGenerateSeq_Click(object sender, EventArgs e)
         {
             n = (int)numericUpDownN.Value;
             B = (int)numericUpDownB.Value;
 
-            A = GenerateMultiplicativeSuperIncreasing(n, B);
+            A = GenerateMultiplicativeSuperIncreasingForGMKP(n, B);
             txtSeq.Text = string.Join(", ", A);
             lblStatus.Text = $"Мультипликативная сверхвозрастающая последовательность (B={B}) сгенерирована.";
             btnGenerateKeys.Enabled = true;
         }
 
-        /// <summary>
-        /// Генерация мультипликативной сверхвозрастающей последовательности:
-        /// a_k > ∏_{i=1}^{k-1} a_i^(B-1)
-        /// </summary>
-        private BigInteger[] GenerateMultiplicativeSuperIncreasing(int length, int baseB)
+        private BigInteger[] GenerateMultiplicativeSuperIncreasingForGMKP(int length, int baseB)
         {
             Random rnd = new Random();
             BigInteger[] seq = new BigInteger[length];
 
-            // Первый элемент (минимальное значение от 2 до 10)
+            // Первый элемент
             seq[0] = rnd.Next(2, 10);
             BigInteger product = 1;
 
             for (int i = 1; i < length; i++)
             {
-                // Вычисляем произведение предыдущих элементов в степени (B-1)
-                BigInteger productPower = 1;
+                // a_k > ∏(a_i^(B-1)) для i от 1 до k-1
+                // Вычисляем произведение всех предыдущих элементов в степени (B-1)
+                BigInteger previousProduct = 1;
                 for (int j = 0; j < i; j++)
                 {
-                    productPower *= BigInteger.Pow(seq[j], baseB - 1);
+                    previousProduct *= BigInteger.Pow(seq[j], baseB - 1);
                 }
 
-                // a_i должно быть больше productPower
-                BigInteger minValue = productPower + 1;
-                // Добавляем случайную величину для увеличения разнообразия
-                seq[i] = minValue + rnd.Next(0, 20);
+                // a_k должно быть больше previousProduct
+                seq[i] = previousProduct + rnd.Next(1, 20);
+                product *= seq[i];
             }
             return seq;
         }
@@ -75,15 +71,15 @@ namespace PR1
                 return;
             }
 
-            // Вычисляем ∏_{i=1}^{n} a_i^(B-1)
-            BigInteger productPower = 1;
+            // Вычисляем произведение всех элементов A в степени (B-1)
+            BigInteger productA = 1;
             for (int i = 0; i < n; i++)
             {
-                productPower *= BigInteger.Pow(A[i], B - 1);
+                productA *= BigInteger.Pow(A[i], B - 1);
             }
 
-            // Выбираем модуль p > productPower
-            p = NextPrime(productPower + 1);
+            // Выбираем модуль p > productA
+            p = NextPrime(productA + 1);
 
             Random rnd = new Random();
             do
@@ -93,7 +89,7 @@ namespace PR1
 
             t_inv = ModInverse(t, p);
 
-            // Вычисляем открытый ключ: w_i = a_i^t mod p
+            // Генерация открытого ключа: w_i = a_i^t mod p
             W = new BigInteger[n];
             for (int i = 0; i < n; i++)
             {
@@ -119,7 +115,13 @@ namespace PR1
             }
 
             // Если число слишком большое, ограничиваем его максимальным значением для n цифр в системе B
-            BigInteger maxValue = BigInteger.Pow(B, n) - 1;
+            BigInteger maxValue = 1;
+            for (int i = 0; i < n; i++)
+            {
+                maxValue *= B;
+            }
+            maxValue -= 1;
+
             if (number > maxValue)
             {
                 number = maxValue;
@@ -159,7 +161,7 @@ namespace PR1
             return result.ToString();
         }
 
-        // ========== Шифрование ==========
+        // ========== Шифрование (мультипликативное обобщённое) ==========
         private void btnEncrypt_Click(object sender, EventArgs e)
         {
             if (W == null)
@@ -175,8 +177,22 @@ namespace PR1
                 return;
             }
 
-            // Проверяем длину сообщения
-            int maxChars = (int)(Math.Log((double)BigInteger.Pow(B, n)) / Math.Log(256));
+            // Вычисляем максимальную длину сообщения
+            BigInteger maxNumber = 1;
+            for (int i = 0; i < n; i++)
+            {
+                maxNumber *= B;
+            }
+            maxNumber -= 1;
+
+            int maxChars = 0;
+            BigInteger temp = maxNumber;
+            while (temp > 0)
+            {
+                maxChars++;
+                temp /= 256;
+            }
+
             if (message.Length > maxChars)
             {
                 MessageBox.Show($"Сообщение слишком длинное. Максимальная длина: {maxChars} символов для n={n}, B={B}", "Предупреждение");
@@ -186,7 +202,7 @@ namespace PR1
             // Преобразуем сообщение в цифры по основанию B
             int[] digits = TextToDigits(message);
 
-            // Вычисляем шифртекст: c = ∏ w_i^d_i mod p
+            // Вычисляем шифртекст как произведение w_i^d_i mod p
             BigInteger product = 1;
             for (int i = 0; i < n; i++)
             {
@@ -195,11 +211,12 @@ namespace PR1
 
             txtCipher.Text = product.ToString();
 
+            // Для отладки показываем цифры
             lblStatus.Text = $"Сообщение зашифровано. Цифры: [{string.Join(", ", digits)}]";
             btnDecrypt.Enabled = true;
         }
 
-        // ========== Дешифрование ==========
+        // ========== Дешифрование (мультипликативное обобщённое) ==========
         private void btnDecrypt_Click(object sender, EventArgs e)
         {
             if (A == null || p == 0 || t_inv == 0)
@@ -217,7 +234,7 @@ namespace PR1
 
             BigInteger c = BigInteger.Parse(cipherText);
 
-            // Снимаем маскировку: c' = c^(t^-1) mod p
+            // Снимаем маскировку: c' = c^(t_inv) mod p
             BigInteger c_prime = BigInteger.ModPow(c, t_inv, p);
 
             // Жадный алгоритм для восстановления цифр
@@ -226,25 +243,20 @@ namespace PR1
 
             for (int i = n - 1; i >= 0; i--)
             {
-                // Находим максимальную степень d_i такую, что a_i^d_i делит remaining
+                // Находим максимальную степень d_i такую, что A[i]^d_i делит remaining
                 // и d_i <= B-1
                 digits[i] = 0;
-                BigInteger power = 1;
-
-                for (int exp = 1; exp <= B - 1; exp++)
+                for (int d = B - 1; d >= 0; d--)
                 {
-                    power *= A[i];
-                    if (remaining % power == 0)
+                    BigInteger power = BigInteger.Pow(A[i], d);
+                    if (remaining % power == 0 && d >= digits[i])
                     {
-                        digits[i] = exp;
-                    }
-                    else
-                    {
+                        digits[i] = d;
                         break;
                     }
                 }
 
-                // Делим remaining на a_i^d_i
+                // Делим remaining на A[i]^digits[i]
                 remaining /= BigInteger.Pow(A[i], digits[i]);
             }
 
@@ -264,86 +276,27 @@ namespace PR1
 
         // ========== Вспомогательные методы ==========
 
-        // ========== Вспомогательные методы ==========
-
         private bool IsPrime(BigInteger num)
         {
             if (num < 2) return false;
             if (num == 2) return true;
             if (num % 2 == 0) return false;
 
-            // Используем пробное деление только до sqrt(num)
-            // Для больших чисел используем BigInteger для вычисления sqrt
-            BigInteger sqrtNum = Sqrt(num);
-
-            for (BigInteger i = 3; i <= sqrtNum; i += 2)
+            BigInteger limit = (BigInteger)Math.Sqrt((double)num);
+            for (BigInteger i = 3; i <= limit; i += 2)
             {
                 if (num % i == 0) return false;
             }
             return true;
         }
 
-        /// <summary>
-        /// Вычисление целочисленного квадратного корня из BigInteger
-        /// </summary>
-        private BigInteger Sqrt(BigInteger n)
-        {
-            if (n == 0) return 0;
-            if (n < 0) throw new ArgumentException("Cannot compute square root of negative number");
-
-            BigInteger low = 1;
-            BigInteger high = n;
-            BigInteger mid;
-
-            while (high - low > 1)
-            {
-                mid = (low + high) / 2;
-                BigInteger midSquared = mid * mid;
-
-                if (midSquared == n)
-                    return mid;
-                else if (midSquared < n)
-                    low = mid;
-                else
-                    high = mid;
-            }
-
-            // Проверяем, какой из двух кандидатов ближе
-            if (high * high <= n)
-                return high;
-            else
-                return low;
-        }
-
         private BigInteger NextPrime(BigInteger start)
         {
             if (start <= 2) return 2;
             if (start % 2 == 0) start++;
-
-            // Ограничиваем максимальное количество попыток, чтобы избежать бесконечного цикла
-            int maxAttempts = 100000;
-            int attempts = 0;
-
-            while (!IsPrime(start) && attempts < maxAttempts)
-            {
-                start += 2;
-                attempts++;
-            }
-
-            if (attempts >= maxAttempts)
-            {
-                // Если не нашли простое число за разумное количество попыток,
-                // используем простой метод проверки с большим шагом
-                while (!IsPrime(start))
-                {
-                    start += 2;
-                }
-            }
-
+            while (!IsPrime(start)) start += 2;
             return start;
         }
-
-
 
         private BigInteger ModInverse(BigInteger a, BigInteger m)
         {
